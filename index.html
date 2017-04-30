@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+<title>基于jsSIP2.0实现的音视频通信客户端</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" href="images/icon.png"/>
+<link rel="apple-touch-startup-image" href="images/icon.png" />
+
+<style type="text/css">
+body, html{height:100%;width: 100%;position: fixed;overflow: hidden;}
+video{
+	width: 350px;
+}
+</style>
+</head>
+<body>
+<h2>注册</h2>
+<p>
+<input type="text" name="server" placeholder="" value="101.200.187.190">
+<input type="text" name="username" value="" autofocus placeholder="用户名">
+<input type="text" name="password" placeholder="密码">
+<button id="btn-reg">注册</button>
+</p>
+音视频通信DEMO<h2>被叫方</h2>
+<p>
+	<input type="text" name="calluser" value="" placeholder="被叫">
+	<button id="btn-call">视频电话</button>
+</p>
+<div id="webcam">
+	<video id="video-local" class="move" autoplay poster=""></video>
+	<video id="video-remote" class="move" autoplay></video>
+</div>
+</body>
+<script>window.$ = window.jQuery = require('./public/js/jquery.min.js');</script>
+<script src="./public/js/sip.js"></script>
+<script src="./public/js/app.js"></script>
+<script src="./public/js/jssip.min.js"></script>
+</html>
