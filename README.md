@@ -4,4 +4,4 @@
 请使用wss和https,如果没有，可以配合electron使用
 
 
-![](img.png)
+![](img.jpeg)
